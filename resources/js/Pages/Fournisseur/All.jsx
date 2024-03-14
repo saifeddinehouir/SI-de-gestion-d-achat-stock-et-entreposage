@@ -8,10 +8,11 @@ import Table from '@/Components/Table';
 
 
 const columns=[
+    'nom',
     'email',
     'telephone',
 ]
-export default function All({ auth, fournisseur }) {
+export default function All({ auth, fournisseurs }) {
     return (
         <AuthenticatedLayout
             user={auth.user}
@@ -22,7 +23,7 @@ export default function All({ auth, fournisseur }) {
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                        <Table items={fournisseur} columns={columns} primary={"Nom du fournisseur"} action="fournisseur.edit" ></Table>
+                        <Table items={fournisseurs} columns={columns} primary={"ID_fournisseur"} action="fournisseur.edit" ></Table>
                     </div>
                 </div>
             </div>
