@@ -2,19 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Achat;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 class AchatController extends Controller
 {
-    public function index(){
-        // Retrieve all records from the Achat model
-        /*$achats = Achat::all();
-        
-        // Render an Inertia.js component named 'Achats/All'
-        // and pass the retrieved 'achats' data to the component
-        return Inertia::render(component: 'Achats/All', [
-            'achats'=> $achats
-        ]);*/
+    public function index()
+    {
+
+    
+        $achats=Achat::all();
+        return Inertia::render('Achat/All',[
+            'achats' => $achats,
+        ]);
+    } 
+    public function edit(): void
+    {
+       
     }
+
+    public function update():void
+    {
+    }   
 }

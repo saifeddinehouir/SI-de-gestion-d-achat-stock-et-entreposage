@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('numero_de_suivi')->nullable();
             $table->foreignIdFor(DemandeAchat::class)->nullable();
             $table->text('commentaires')->nullable();
-            $table->string('status')->default('pending');
+            $table->string('statut')->default('rejected');
             $table->timestamps();
             
         });
