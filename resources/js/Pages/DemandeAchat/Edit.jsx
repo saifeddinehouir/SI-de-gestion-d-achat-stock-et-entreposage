@@ -1,6 +1,6 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
-import UpdateFournisseurInformationForm from './Partials/UpdateFournisseurInformationForm';
+import UpdateDemandeAchatInformationForm from './Partials/UpdateDemandeAchatInformationForm';
 export default function Edit({auth,demandeachat}){
     return (
         <AuthenticatedLayout

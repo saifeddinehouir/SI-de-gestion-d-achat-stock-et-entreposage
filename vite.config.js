@@ -8,7 +8,9 @@ export default defineConfig({
             input:['resources/js/app.jsx',
             'resources/js/Pages/Fournisseur/All.jsx', 
             'resources/js/Components/Table.jsx',
-            'resources/js/Pages/Achat/DemandeAchat/All.jsx'],
+            'resources/js/Pages/DemandeAchat/All.jsx',
+            'resources/js/Pages/DemandeAchat/Edit.jsx',
+            ],
             ssr: 'resources/js/ssr.jsx',
 
             refresh: true,
